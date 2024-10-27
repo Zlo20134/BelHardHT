@@ -7,7 +7,7 @@ print('Привет, меня зовут '+ firstname, lastname + ', мне ' + 
 text = input('Введите текст: ')
 print(text[2])
 print(text[-2])
-print(text[0:4])
+print(text[0:5])
 print(text[:-2])
 
 some_str = 'Hello, world!'
