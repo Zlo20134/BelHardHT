@@ -1,7 +1,7 @@
 def count_char(STR_VAL):
     char_count = {}
     for char in STR_VAL:
-        if char.isalpha():  # Проверяем, является ли символ буквой
+        if char.isalpha():
             if char in char_count:
                 char_count[char] += 1
             else:
