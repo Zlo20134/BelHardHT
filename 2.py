@@ -5,8 +5,9 @@ if cent >= 100:
     add_rubles = cent // 100
     rubles += add_rubles
     cent %= 100
-
-if rubles % 10 == 1:
+if 11 <= rubles % 100 <= 14:
+    rubles_text = f'{rubles} рублей'
+elif rubles % 10 == 1:
     rubles_text = f'{rubles} рубль'
 elif rubles % 10 in (2, 3, 4):
     rubles_text = f'{rubles} рубля'
