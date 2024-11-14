@@ -1,4 +1,7 @@
-class Transport:
+from abc import ABC, abstractmethod
+
+
+class Transport(ABC):
     def __init__(self, brand: str, model: str, issue_year: int, color: str):
         self.brand = brand
         self.model = model
@@ -6,6 +9,7 @@ class Transport:
         self.color = color
         self.mileage = 0
 
+    @abstractmethod
     def move(self, num_km: int):
         if num_km <=0:
             raise ValueError("Расстояние должно быть положительным числом")
